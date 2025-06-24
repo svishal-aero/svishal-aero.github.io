@@ -1,0 +1,320 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{datetime}
+
+\input{glyphtounicode}
+
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+\hypersetup{pdfborder = 0 0 0}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-0.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1\vspace{-2pt}}}
+}
+
+\newcommand{\resumeStint}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} & {\small #2}
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubstint}[2]{
+  \vspace{-16pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r}
+    {\textit{\small#1}}&{\textit{\small#2}}
+  \end{tabular*}%\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%\setlength{\footskip}{4.08003pt}
+
+\begin{document}
+
+  %\pagestyle{fancy}
+  %\fancyfoot{}
+  %\fancyfoot[RE]{
+  %  \color[rgb]{0.8,0.8,0.8}
+  %  {\tiny\item Last updated: \monthyeardate\today}
+  %}
+
+  \vspace*{0.25in}
+
+  % Header -----------------------------------------------------------------------------------------
+
+  \begin{center}
+    \textbf{\Huge\scshape Vishal Srivastava}\\
+    \vspace{8pt}\small
+    \faIcon{code}\href{https://svishal-aero.github.io}{
+      svishal-aero.github.io
+    }${ }{ }\bullet{ }{ }$
+    \faIcon{linkedin}\href{https://linkedin.com/in/vishal-srivastava-a396bb77/}{
+      vishal-srivastava-a396bb77
+    }${ }{ }\bullet{ }{ }$
+    \faIcon{envelope}\href{mailto:svishal.aero@gmail.com}{
+      svishal.aero@gmail.com
+    }${ }{ }\bullet{ }{ }$
+    \faIcon{phone}+1$ $(734)$ $239-1484
+  \end{center}
+
+  % Education --------------------------------------------------------------------------------------
+
+  \section{Education}
+  \resumeSubHeadingListStart
+    \resumeStint
+    {University of Michigan, Ann Arbor}{May 2022}
+    \resumeSubstint
+    {Ph.D. (Aerospace Engineering, Advisor: Prof. Karthik Duraisamy)}{GPA: 4.0/4.0}
+    \vspace{3pt}
+    \resumeStint
+    {Indian Institute of Technology, Kanpur}{May 2016}
+    \resumeSubstint
+    {B.Tech. (Aerospace Engineering)}{CPI: 9.5/10.0}
+  \resumeSubHeadingListEnd
+
+  % Awards -----------------------------------------------------------------------------------------
+
+  \section{Awards}
+  \resumeSubHeadingListStart
+    \resumeItem{
+      \textbf{General Proficiency Medal} (Convocation, 2016 - IIT Kanpur) for ranking first in
+      Aerospace Engineering
+    }
+  \resumeSubHeadingListEnd
+
+  % Research Interests -----------------------------------------------------------------------------
+
+  \section{Research Interests}
+  {
+    \small
+    \begin{center}
+      \begin{tabular*}{0.97\textwidth}[t]{@{\vspace{3pt}}l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}l}
+      $\bullet$ Computational Aerodynamics & $\bullet$ Data-driven modeling & $\bullet$ Multidisciplinary Design \& Optimization\\
+      $\bullet$ Scientific Machine Learning  & $\bullet$ Numerical Methods & $\bullet$ Reduced-order/Surrogate modeling
+    \end{tabular*}
+    \end{center}
+  }
+
+  % Experience -------------------------------------------------------------------------------------
+
+  \section{Experience}
+  \resumeSubHeadingListStart
+    \resumeStint
+    {Analytical Mechanics Associates}{Hampton VA, USA}
+    \resumeSubstint
+    {Aerospace Engineer, Senior (Postdoctoral Researcher at NASA Langley)}{Jan 2024 -- Present}
+    \vspace{7pt}
+    \resumeSubstint
+    {Engineer, Staff (Postdoctoral Researcher at NASA Langley)}{Jun 2023 -- Dec 2023}
+    \vspace{3pt}
+    \resumeStint
+    {National Institute of Aerospace}{Hampton VA, USA}
+    \resumeSubstint
+    {Research Engineer I (Postdoctoral Researcher at NASA Langley)}{Jul 2022 -- May 2023}
+    \vspace{3pt}
+    \resumeStint
+    {University of Michigan, Ann Arbor}{Ann Arbor MI, USA}
+    \resumeSubstint
+    {Postdoctoral Research Scholar (at Prof. Karthik Duraisamy's group)}{Jun 2022 -- Jul 2022}
+  \resumeSubHeadingListEnd
+
+  % Publications -----------------------------------------------------------------------------------
+
+  \section{Journal Publications}
+  {
+    \small
+    \begin{enumerate}
+      \item
+      Srivastava, V., Sulzer, V., Mohtat, P., Siegel, J. B., \& Duraisamy, K. (2023).%
+      \textbf{
+        A non-intrusive approach for physics-constrained learning with application to fuel cell
+        modeling.%
+      }\textit{
+        Computational Mechanics, 72(2), 411-430.
+      }
+
+      \item
+      Srivastava, V., \& Duraisamy, K. (2023).%
+      \textbf{
+        Generalizable physics-constrained modeling using learning and inference assisted by
+        feature-space engineering.%
+      }\textit{
+        Physical Review Fluids, 6(12), 124602.
+      }
+    \end{enumerate}
+  }
+
+  \section{Conference Proceedings}
+  {
+    \small
+    \begin{enumerate}
+      \item
+      Srivastava, V., Rumsey, C. L., Coleman, G. N., \& Wang, L. (2024).%
+      \textbf{
+        On generalizably improving RANS predictions of flow separation and reattachment.
+      }In\textit{
+        AIAA SCITECH 2024 Forum (p. 2520).
+      }
+
+      \item
+      Hildebrand, N., Srivastava, V., Zaki, T. A., \& Choudhari, M. M. (2023, September).%
+      \textbf{
+        DeepONet-Assisted Optimization of Surface Topography for Transition Delay in a Mach 4.5
+        Boundary Layer.
+      }In\textit{
+        14th International ERCOFTAC Symposium on Engineering Turbulence Modelling and
+        Measurements (ETMM14) (No. 20230001917).
+      }
+
+      \item
+      Hildebrand, N., Venkatachari, B. S., Srivastava, V., \& Choudhari, M. M. (2023, September).%
+      \textbf{
+        Recent Progress on RANS-Based Transition Model Verification.
+      }In\textit{
+        14th International ERCOFTAC Symposium on Engineering Turbulence Modelling 
+        and Measurements (ETMM14).
+      }
+
+      \item
+      Srivastava, V., \& Duraisamy, K. (2022).%
+      \textbf{
+        Towards a generalizable data-driven approach to predict separation-induced transition.
+      }In\textit{
+        12th International Symposium on Turbulence and Shear Flow Phenomena (TSFP12).
+      }
+
+      \item
+      Srivastava, V., \& Duraisamy, K. (2018).%
+      \textbf{
+        Aerodynamic design of aircraft engine nozzles with consideration of model-form uncertainties.
+      }In\textit{
+        2018 AIAA Non-Deterministic Approaches Conference (p. 2175).
+      }
+    \end{enumerate}
+  }
+
+  \newpage
+
+  % Extras -----------------------------------------------------------------------------------------
+
+  \vspace*{0.25in}
+  \section{Book Chapters}
+  {
+    \small
+    \begin{enumerate}
+      \item
+      Duraisamy, K. \& Srivastava, V. (2025).%
+      \textbf{
+        Machine learning augmented modeling of turbulence.
+      }In\textit{
+        Data Driven Analysis and Modeling of Turbulent Flows (pp. 311-354). Academic Press.
+      }
+    \end{enumerate}
+  }
+
+  \section{Technical Reports}
+  {
+    \small
+    \begin{enumerate}
+      \item
+      Srivastava, V., Rumsey, C. L., Coleman, G. N., \& Wang, L. (2024).%
+      \textbf{
+        Augmenting RANS Turbulence Models Guided by Field Inversion and Machine Learning.%
+      }\textit{
+        (No. NASA/TM-20240012512).
+      }
+    \end{enumerate}
+  }
+
+  \section{Invited Talks/Lectures}
+  {
+    \small
+    \begin{enumerate}
+      \item
+      Srivastava, V., Rumsey, C. L., Coleman, G. N., \& Wang, L. (2025).%
+      \textbf{
+        Data-driven Improvements in RANS Predictions for Reattachment of Separated Flows.%
+      }\textit{
+        137th NIA CFD Seminar. National Institute of Aerospace.
+      }
+
+      \item
+      Srivastava, V. (2024).%
+      \textbf{
+        An Introduction to Machine Learning for Turbulence Modeling.%
+      }\textit{
+        MAE298: Fundamentals of Turbulence Modeling (Course Instructor: Dr. Camli Badrya), UC Davis
+      }
+
+      \item
+      Srivastava, V., \& Duraisamy, K. (2019).%
+      \textbf{
+        Developing Data-Augmented Turbulence Models using Field Inversion and Machine Learning.%
+      }\textit{
+        120th NIA CFD Seminar. National Institute of Aerospace.
+      }
+    \end{enumerate}
+  }
+
+  \section{Skills}
+  {
+    \small
+    \begin{center}
+    \begin{tabular*}{0.97\textwidth}[t]{@{\vspace{3pt}}l@{\extracolsep{10pt}}l}
+      \textbf{Programming Languages:} & C/C++, Python, FORTRAN, Julia, MATLAB \\
+      \textbf{Machine Learning Packages:} & PyTorch, Keras (Tensorflow) \\
+      \textbf{Scientific Computing Libraries:} & BLAS, LAPACK, PETSc, (Par)METIS, ADOL-C, CoDiPack \\
+      \textbf{Parallel/Hybrid Computing Paradigms:} & OpenMP, MPI, CUDA, Kokkos \\
+    \end{tabular*}
+    \end{center}
+  }
+
+\end{document}

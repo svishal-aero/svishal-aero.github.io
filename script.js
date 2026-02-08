@@ -14,7 +14,7 @@ function adjustImageAndText()
     const currHeight = currWidth * aspectRatio;
     image.style.width = `${currWidth}px`;
     image.style.height = `${currHeight}px`;
-    if (currHeight >= text.clientHeight) break;
+    if (currHeight >= 0.99 * text.clientHeight) break;
   }
 }
 

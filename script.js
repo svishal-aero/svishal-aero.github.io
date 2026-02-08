@@ -1,7 +1,7 @@
 function adjustImageAndText()
 {
   const image = document.getElementById('profile-picture');
-  const text = document.getElementById('intro-text');
+  const text = document.getElementById('intro-text-side');
   const aspectRatio = image.naturalHeight / image.naturalWidth;
 
   let currWidth = 0;

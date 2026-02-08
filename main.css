@@ -69,7 +69,18 @@ body
   object-fit: contain;
 }
 
-#intro-text
+#intro-text-side
+{
+  flex-grow: 0;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 23px;
+  font-size: 17px;
+}
+
+#intro-text-below
 {
   flex-grow: 0;
   text-align: justify;
